@@ -3,14 +3,10 @@
 
 import polars as pl
 import yaml
-from signals import *
+from code import signals
 
-def compute_alphas(data: pl.DataFrame, config_path: str = "config_files/research_config.yaml") -> pl.DataFrame:
+def compute_alphas(data: pl.DataFrame, signal_config: dict) -> pl.DataFrame:
     """compute the configured signal"""
-    with open(config_path) as f:
-        config = yaml.safe_load(f)
-    
-    signal_config = config["signal"]
     signal_name = signal_config["name"]
     signal_type = signal_config["type"]
     

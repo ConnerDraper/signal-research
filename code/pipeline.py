@@ -6,10 +6,12 @@ Runs on supercomputer, saves minimal outputs for visualization.
 
 import polars as pl
 import yaml
+from pathlib import Path
 
 from data_loader import load_barra_data
 from signal_loader import compute_alphas
 from backtester import run_mvo_backtest
+from visualization import create_core_visualizations
 import sf_quant.performance as sfp
 
 def main(config_path: str = "config_files/research_config.yaml"):
@@ -23,12 +25,13 @@ def main(config_path: str = "config_files/research_config.yaml"):
     
     # 2. compute signals
     print("computing signals...")
-    alpha_data = compute_alphas(data, config_path)
+    alpha_data = compute_alphas(data, config["signal"])
     
     # 3. run backtests
     print("running backtests...")
     weights = run_mvo_backtest(
         alpha_data=alpha_data,
+        signal_name=config["signal"]["name"],
         constraints=config["backtest"]["constraints"],
         gamma=config["backtest"]["gamma"]
     )
@@ -39,7 +42,8 @@ def main(config_path: str = "config_files/research_config.yaml"):
     
     # 5. save minimal results for visualization
     print("saving results...")
-    output_dir = config["output"]["results_path"]
+    output_dir = Path(config["output"]["results_path"])
+    output_dir.mkdir(parents=True, exist_ok=True)
     
     weights.write_parquet(f"{output_dir}/weights.parquet")
     returns.write_parquet(f"{output_dir}/returns.parquet")
@@ -49,6 +53,15 @@ def main(config_path: str = "config_files/research_config.yaml"):
     alpha_data.select([
         "date", "barrid", f"{signal_name}_alpha", "specific_risk"
     ]).write_parquet(f"{output_dir}/alphas.parquet")
+    
+    # 6. create visualizations
+    print("creating visualizations...")
+    create_core_visualizations(
+        weights=weights,
+        alpha_data=alpha_data,
+        signal_name=signal_name,
+        output_path=str(output_dir)
+    )
     
     print("pipeline complete!")
 
