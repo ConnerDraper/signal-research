@@ -74,16 +74,20 @@ def _plot_quantile_returns(alpha_data: pl.DataFrame, signal_name: str, output_pa
         on="quantile", 
         values="quantile_return"
     )
-    
-    plt.figure(figsize=(10, 6))
-    plt.plot(pivot_data["date"], pivot_data["4"] - pivot_data["0"], label="Top-Bottom Spread")
-    plt.title(f"{signal_name} - Quantile Spread Returns")
-    plt.xlabel("Date")
-    plt.ylabel("Return Spread")
-    plt.legend()
-    plt.grid(True)
-    plt.savefig(Path(output_path) / "quantile_returns.png")
-    plt.close()
+
+    # Check if top and bottom quantiles exist before plotting
+    if "0" in pivot_data.columns and "4" in pivot_data.columns:
+        plt.figure(figsize=(10, 6))
+        plt.plot(pivot_data["date"], pivot_data["4"] - pivot_data["0"], label="Top-Bottom Spread")
+        plt.title(f"{signal_name} - Quantile Spread Returns")
+        plt.xlabel("Date")
+        plt.ylabel("Return Spread")
+        plt.legend()
+        plt.grid(True)
+        plt.savefig(Path(output_path) / "quantile_returns.png")
+        plt.close()
+    else:
+        raise ValueError("not enough data for all quantiles")
 
 def _plot_zscore_distribution(alpha_data: pl.DataFrame, signal_name: str, output_path: str):
     """plot z-score distribution histogram"""

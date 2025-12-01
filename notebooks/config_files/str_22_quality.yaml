@@ -1,0 +1,59 @@
+# complete research pipeline configuration
+
+# data loading and cleaning
+data_loading:
+  start_date: "2000-01-01"
+  end_date: "2025-11-18"
+  russell_filter: True
+  columns:
+    - date
+    - barrid
+    - ticker
+    - price
+    - return
+    - market_cap
+    - bid_ask_spread
+    - daily_volume
+    - predicted_beta
+    - specific_return
+    - specific_risk
+    - yield
+    - iso_country_code
+    - rootid
+    - issuerid
+
+data_cleaning:
+  convert_returns_to_decimal: True
+  replace_zero_volume: True
+  add_missing_columns: True
+  filters:
+    - usa_only: True
+      min_price: 5.0
+      dollar_volume_percentile: 0.02
+      bid_ask_spread_percentile: 0.02
+      require_returns: True
+      require_specific_risk: True
+
+# signal definition
+signal:
+  name: "str"
+  type: "reversal"
+  window_size: 22
+  direction: -1
+  shift: 0
+
+# backtest configuration
+backtest:
+  constraints: 
+    - "FullInvestment"
+    - "LongOnly"
+    - "NoBuyingOnMargin"
+    - "UnitBeta"
+  gamma: 400
+  n_cpus: 8
+
+# output paths
+output:
+  results_path: "data/results"
+  visualization_path: "data/reports"
+  logs_path: "data/logs"

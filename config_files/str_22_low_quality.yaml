@@ -2,8 +2,8 @@
 
 # data loading and cleaning
 data_loading:
-  start_date: "1995-06-27"
-  end_date: "2025-09-15"
+  start_date: "2000-01-01"
+  end_date: "2025-11-18"
   russell_filter: True
   columns:
     - date
@@ -28,46 +28,23 @@ data_cleaning:
   add_missing_columns: True
   filters:
     - usa_only: True
-      min_price: 5.0
+      min_price: 0.0
+      dollar_volume_percentile: 0.00
+      bid_ask_spread_percentile: 0.00
       require_returns: True
       require_specific_risk: True
 
-# individual signal definitions - test one at a time
-signals:
-  idio_vol_252:
-    type: "idio_vol"
-    window_size: 252
-    direction: -1
-    shift: 2
-  
-  idio_vol_126:
-    type: "idio_vol" 
-    window_size: 126
-    direction: -1
-    shift: 2
-  
-  price_impact_22:
-    type: "price_impact"
-    window_size: 22
-    direction: 1
-    shift: 2
-
-  cost_252:
-    type: "cost"
-    window_size: 252
-    direction: 1
-    shift: 2
-
-# groups for batch processing (still individual backtests)
-signal_groups:
-  volatility: ["idio_vol_252", "idio_vol_126"]
-  illiquidity: ["price_impact_22", "cost_252"]
-  all: ["idio_vol_252", "price_impact_22", "cost_252"]
+# signal definition
+signal:
+  name: "str"
+  type: "str"
+  window_size: 22
+  direction: -1
+  shift: 0
 
 # backtest configuration
 backtest:
   constraints: 
-    - "ZeroBeta"
     - "FullInvestment"
     - "LongOnly"
     - "NoBuyingOnMargin"

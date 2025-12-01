@@ -5,7 +5,7 @@ import polars as pl
 import sf_quant.backtester as sfb
 import sf_quant.optimizer as sfo
 
-def run_mvo_backtest(alpha_data: pl.DataFrame, signal_name: str, constraints: list, gamma: int) -> pl.DataFrame:
+def run_mvo_backtest(alpha_data: pl.DataFrame, signal_name: str, constraints: list, gamma: int, n_cpus: int) -> pl.DataFrame:
     """run MVO backtest on alpha data"""
     
     # convert constraint names to objects using getattr
@@ -32,7 +32,8 @@ def run_mvo_backtest(alpha_data: pl.DataFrame, signal_name: str, constraints: li
     weights = sfb.backtest_parallel(
         data=backtest_data,
         constraints=constraint_objects,
-        gamma=gamma
+        gamma=gamma,
+        n_cpus=n_cpus
     )
     
     return weights

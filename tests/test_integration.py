@@ -4,10 +4,10 @@ import yaml
 from unittest.mock import patch
 from pathlib import Path
 
-from code.data_loader import load_barra_data
-from code.signal_loader import compute_alphas
-from code.pipeline import main
-from code.visualization import create_core_visualizations
+from src.data_loader import load_barra_data
+from src.signal_loader import compute_alphas
+from src.pipeline import main
+from src.visualization import create_core_visualizations
 
 
 @pytest.fixture(scope="module")

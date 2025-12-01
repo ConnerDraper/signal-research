@@ -5,7 +5,7 @@ import polars as pl
 import pytest
 from polars.testing import assert_frame_equal
 
-from code.data_loader import apply_filters, prepare_data, validate_data
+from src.data_loader import apply_filters, prepare_data, validate_data
 
 
 def test_prepare_data_converts_to_decimal(barra_data: pl.DataFrame):

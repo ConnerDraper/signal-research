@@ -3,7 +3,7 @@
 
 import polars as pl
 import yaml
-from code import signals
+from . import signals
 
 def compute_alphas(data: pl.DataFrame, signal_config: dict) -> pl.DataFrame:
     """compute the configured signal"""

@@ -1,0 +1,57 @@
+# complete research pipeline configuration
+
+# data loading and cleaning
+data_loading:
+  start_date: "1995-06-27"
+  end_date: "2025-09-15"
+  russell_filter: True
+  columns:
+    - date
+    - barrid
+    - ticker
+    - price
+    - return
+    - market_cap
+    - bid_ask_spread
+    - daily_volume
+    - predicted_beta
+    - specific_return
+    - specific_risk
+    - yield
+    - iso_country_code
+    - rootid
+    - issuerid
+
+data_cleaning:
+  convert_returns_to_decimal: True
+  replace_zero_volume: True
+  add_missing_columns: True
+  filters:
+    - usa_only: True
+      min_price: 5.0
+      require_returns: True
+      require_specific_risk: True
+
+# signal definition
+signal:
+  name: "idio_vol"
+  type: "idio_vol"
+  window_size: 126
+  direction: -1
+  shift: 2
+
+# backtest configuration
+backtest:
+  constraints:
+    - "FullInvestment"
+    - "LongOnly"
+    - "NoBuyingOnMargin"
+    - "UnitBeta"
+  gamma: 400
+  n_cpus: 8
+
+# output paths
+output:
+  results_path: "data/results"
+  visualization_path: "data/reports"
+  logs_path: "data/logs"

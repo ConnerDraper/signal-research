@@ -1,0 +1,481 @@
+2025-11-18 21:39:05,792	INFO worker.py:2012 -- Started a local Ray instance.
+2025-11-18 21:39:06,534	INFO packaging.py:588 -- Creating a file package for local module '/home/connerd4/silverfund/signal-research'.
+2025-11-18 21:39:06,959	INFO packaging.py:380 -- Pushing file package 'gcs://_ray_pkg_259d199302bf0fa6.zip' (0.94MiB) to Ray cluster...
+2025-11-18 21:39:06,963	INFO packaging.py:393 -- Successfully pushed file package 'gcs://_ray_pkg_259d199302bf0fa6.zip'.
+/home/connerd4/silverfund/signal-research/.venv/lib64/python3.11/site-packages/ray/_private/worker.py:2051: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m Using CPython 3.11.7 interpreter at: /usr/bin/python3.11
+[33m(raylet)[0m Creating virtual environment at: .venv
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead[32m [repeated 3x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead[32m [repeated 3x across cluster][0m
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[36m(pid=gcs_server)[0m [2025-11-18 21:39:29,692 E 2359026 2359026] (gcs_server) gcs_server.cc:302: Failed to establish connection to the event+metrics exporter agent. Events and metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m [2025-11-18 21:39:34,883 E 2359386 2359386] (raylet) main.cc:975: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[2025-11-18 21:39:40,103 E 2358884 2359556] core_worker_process.cc:825: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m [2025-11-18 21:40:10,089 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2360085) have not registered within the timeout. The process is dead, probably it crashed during start.
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m [2025-11-18 21:40:13,740 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2360178) have not registered within the timeout. The process is dead, probably it crashed during start.[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m [2025-11-18 21:40:17,214 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2360266) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m [2025-11-18 21:40:15,509 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2360224) have not registered within the timeout. The process is dead, probably it crashed during start.
+[33m(raylet)[0m [2025-11-18 21:40:22,334 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2360386) have not registered within the timeout. The process is still alive, probably it's hanging during start.[32m [repeated 3x across cluster][0m
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead[32m [repeated 3x across cluster][0m
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m [2025-11-18 21:41:10,093 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2360886) have not registered within the timeout. The process is dead, probably it crashed during start.
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m [2025-11-18 21:41:15,513 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2360933) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[33m(raylet)[0m [2025-11-18 21:41:13,745 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2360909) have not registered within the timeout. The process is dead, probably it crashed during start.[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m [2025-11-18 21:41:18,940 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2360960) have not registered within the timeout. The process is still alive, probably it's hanging during start.[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6[32m [repeated 3x across cluster][0m
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead[32m [repeated 3x across cluster][0m
+[33m(raylet)[0m [2025-11-18 21:41:22,341 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2360980) have not registered within the timeout. The process is still alive, probably it's hanging during start.[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m [2025-11-18 21:42:10,097 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2361264) have not registered within the timeout. The process is dead, probably it crashed during start.
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m [2025-11-18 21:42:15,518 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2361293) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[33m(raylet)[0m [2025-11-18 21:42:13,749 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2361280) have not registered within the timeout. The process is dead, probably it crashed during start.[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead[32m [repeated 3x across cluster][0m
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m [2025-11-18 21:42:18,944 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2361317) have not registered within the timeout. The process is still alive, probably it's hanging during start.[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead[32m [repeated 3x across cluster][0m
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6[32m [repeated 3x across cluster][0m
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m [2025-11-18 21:42:22,345 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2361335) have not registered within the timeout. The process is still alive, probably it's hanging during start.[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m [2025-11-18 21:43:10,104 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2361644) have not registered within the timeout. The process is dead, probably it crashed during start.
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m [2025-11-18 21:43:13,754 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2361667) have not registered within the timeout. The process is dead, probably it crashed during start.[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m [2025-11-18 21:43:15,522 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2361680) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead[32m [repeated 3x across cluster][0m
+[33m(raylet)[0m [2025-11-18 21:43:22,350 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2361725) have not registered within the timeout. The process is still alive, probably it's hanging during start.[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead[32m [repeated 3x across cluster][0m
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m [2025-11-18 21:44:10,109 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2362032) have not registered within the timeout. The process is dead, probably it crashed during start.
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m [2025-11-18 21:44:15,527 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2362066) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[33m(raylet)[0m [2025-11-18 21:44:13,758 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2362056) have not registered within the timeout. The process is dead, probably it crashed during start.[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6[32m [repeated 2x across cluster][0m
+[36m(raylet)[0m Spilled 2595 MiB, 4 objects, write throughput 220 MiB/s. Set RAY_verbose_spill_logs=0 to disable this message.
+[33m(raylet)[0m [2025-11-18 21:44:18,954 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2362090) have not registered within the timeout. The process is still alive, probably it's hanging during start.[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6[32m [repeated 3x across cluster][0m
+[36m(raylet)[0m Spilled 4541 MiB, 7 objects, write throughput 153 MiB/s.
+[33m(raylet)[0m [2025-11-18 21:44:22,355 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2362111) have not registered within the timeout. The process is still alive, probably it's hanging during start.[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m [2025-11-18 21:45:10,114 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2362673) have not registered within the timeout. The process is dead, probably it crashed during start.
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m [2025-11-18 21:45:15,535 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2362836) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[33m(raylet)[0m [2025-11-18 21:45:13,764 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2362704) have not registered within the timeout. The process is dead, probably it crashed during start.[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead[32m [repeated 5x across cluster][0m
+[33m(raylet)[0m [2025-11-18 21:45:18,960 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2362859) have not registered within the timeout. The process is still alive, probably it's hanging during start.[32m [repeated 2x across cluster][0m
+[36m(raylet)[0m Spilled 9732 MiB, 15 objects, write throughput 124 MiB/s.
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m [2025-11-18 21:45:26,693 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2362889) have not registered within the timeout. The process is still alive, probably it's hanging during start.[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m 
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m [2025-11-18 21:46:10,119 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2363236) have not registered within the timeout. The process is dead, probably it crashed during start.
+[33m(raylet)[0m [2025-11-18 21:46:17,564 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2363255) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[36m(raylet)[0m Spilled 17517 MiB, 27 objects, write throughput 119 MiB/s.
+[33m(raylet)[0m [2025-11-18 21:46:30,167 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2363291) have not registered within the timeout. The process is dead, probably it crashed during start.[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m [2025-11-18 21:46:34,379 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2363427) have not registered within the timeout. The process is still alive, probably it's hanging during start.[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead[32m [repeated 5x across cluster][0m
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m [2025-11-18 21:47:17,572 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2363738) have not registered within the timeout. The process is dead, probably it crashed during start.
+[33m(raylet)[0m [2025-11-18 21:47:17,661 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2363740) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead[32m [repeated 6x across cluster][0m
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m [2025-11-18 21:47:17,671 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2363742) have not registered within the timeout. The process is dead, probably it crashed during start.[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m [2025-11-18 21:47:34,512 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2363859) have not registered within the timeout. The process is still alive, probably it's hanging during start.[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m [2025-11-18 21:48:19,464 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2364062) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[33m(raylet)[0m [2025-11-18 21:48:19,468 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2364063) have not registered within the timeout. The process is dead, probably it crashed during start.
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m [2025-11-18 21:48:19,474 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2364065) have not registered within the timeout. The process is still alive, probably it's hanging during start.[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m [2025-11-18 21:48:19,477 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2364066) have not registered within the timeout. The process is dead, probably it crashed during start.
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m [2025-11-18 21:48:36,063 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2364160) have not registered within the timeout. The process is still alive, probably it's hanging during start.[32m [repeated 3x across cluster][0m
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m [2025-11-18 21:49:20,883 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2364645) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[33m(raylet)[0m [2025-11-18 21:49:20,898 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2364679) have not registered within the timeout. The process is dead, probably it crashed during start.
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m [2025-11-18 21:49:20,898 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2364680) have not registered within the timeout. The process is still alive, probably it's hanging during start.[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m [2025-11-18 21:49:20,898 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2364681) have not registered within the timeout. The process is dead, probably it crashed during start.
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m [2025-11-18 21:49:36,274 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2364806) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[33m(raylet)[0m [2025-11-18 21:49:36,277 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2364807) have not registered within the timeout. The process is dead, probably it crashed during start.
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+[33m(raylet)[0m [2025-11-18 21:49:36,280 E 2359386 2359386] (raylet) worker_pool.cc:589: Some workers of the worker process(2364808) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m warning: `VIRTUAL_ENV=/home/connerd4/silverfund/signal-research/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead[32m [repeated 2x across cluster][0m
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+[33m(raylet)[0m   × Failed to build `signal-research @
+[33m(raylet)[0m   │ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6`
+[33m(raylet)[0m   ├─▶ Failed to resolve requirements from `build-system.requires`
+[33m(raylet)[0m   ├─▶ No solution found when resolving: `hatchling`
+[33m(raylet)[0m   ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+[33m(raylet)[0m   ├─▶ Request failed after 3 retries
+[33m(raylet)[0m   ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+[33m(raylet)[0m   ├─▶ client error (Connect)
+[33m(raylet)[0m   ├─▶ tcp connect error
+[33m(raylet)[0m   ╰─▶ Network is unreachable (os error 101)
+[33m(raylet)[0m    Building signal-research @ file:///tmp/ray/session_2025-11-18_21-38-57_724597_2358884/runtime_resources/working_dir_files/_ray_pkg_259d199302bf0fa6
+slurmstepd: error: *** JOB 8575405 ON m12-1-12 CANCELLED AT 2025-11-18T21:50:13 ***

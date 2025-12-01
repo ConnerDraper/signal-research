@@ -1,0 +1,18 @@
+======================================================
+Starting SLURM task for signal: str_22_quality
+Job ID: 8575621
+Using Config: config_files/str_22_quality.yaml
+======================================================
+======================================================
+Starting Pipeline for: str_22_quality
+Config File: config_files/str_22_quality.yaml
+======================================================
+Loading data...
+loading data: 2000-01-01 to 2025-11-18
+loaded 19129651 rows
+after filtering: 17575629 rows
+Computing signals (Type: str)...
+Running backtests...
+======================================================
+Finished SLURM task for signal: str_22_quality
+======================================================

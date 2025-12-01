@@ -2,7 +2,7 @@ import pytest
 import polars as pl
 from polars.testing import assert_frame_equal
 
-from code.signals.idio_vol import compute_idio_vol
+from src.signals.idio_vol import compute_idio_vol
 
 
 def test_compute_idio_vol_basic():
